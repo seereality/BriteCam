@@ -31,30 +31,19 @@
 	
 		<!-- Header -->
 			<header id="header" class="skel-layers-fixed">
-				<h1 id="logo"><a href="index.html">BriteCam <span>by Unorthodox</span></a></h1>
+				<h1 id="logo"><a href="/">BriteCam <span>by Unorthodox</span></a></h1>
 				<nav id="nav">
 					<ul>
-						<li class="current"><a href="homepage.html">Home</a></li>
+						<li class="current"><a href="/">Home</a></li>
 						<li class="submenu">
-							<a class="button special">Username</a>
+							<a class="button special">{{ user }}</a>
 							<ul>
 								<li><a href="">Settings</a></li>
 								<li><a href="">Billing</a></li>
-								<li><a href="contact.html">Contact Us</a></li>
-								<li><a href="">Logout</a></li>
-								<!-- <li class="submenu">
-									<a href="">Submenu</a>
-									<ul>
-										<li><a href="#">Dolore Sed</a></li>
-										<li><a href="#">Consequat</a></li>
-										<li><a href="#">Lorem Magna</a></li>
-										<li><a href="#">Sed Magna</a></li>
-										<li><a href="#">Ipsum Nisl</a></li>
-									</ul>
-								</li> -->
+								<li><a href="/contact">Contact Us</a></li>
+								<li><a href={{ url_logout|safe }}>{{ url_logout_linktext }}</a></li>
 							</ul>
 						</li>
-						<!-- <li><a href="#" class="button special">Sign Up</a></li> -->
 					</ul>
 				</nav>
 			</header>
